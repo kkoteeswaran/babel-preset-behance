@@ -19,9 +19,9 @@
   "homepage": "https://github.com/behance/babel-preset-behance#readme",
   "dependencies": {
     "babel-plugin-istanbul": "^2.0.0",
-    "babel-preset-env": "^1.0.0",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-3": "^6.5.0"
+    "babel-preset-env": "2.0.0-alpha.1",
+    "babel-preset-react": "7.0.0-alpha.1",
+    "babel-preset-stage-3": "7.0.0-alpha.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
