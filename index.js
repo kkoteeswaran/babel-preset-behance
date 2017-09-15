@@ -26,7 +26,6 @@ module.exports = function(context, opts) {
     if (process.env.COVERAGE) {
       config.plugins.push(require('babel-plugin-istanbul').default);
     }
-    config.plugins.push(require('babel-plugin-rewire'));
   }
 
   return config;

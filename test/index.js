@@ -21,26 +21,6 @@ describe('babel-preset-behance', function() {
   });
 
   describe('when process env is "test"', function() {
-    it('should add babel-plugin-rewire', function() {
-      process.env.NODE_ENV = 'test';
-
-      const expected = {
-        presets: [
-          [require('babel-preset-env'), {
-            exclude: [
-              'transform-regenerator',
-            ],
-            modules: false,
-          }],
-          require('babel-preset-stage-3'),
-        ],
-        plugins: [
-          require('babel-plugin-rewire'),
-        ],
-      };
-      expect(preset()).to.deep.equal(expected);
-    });
-
     it('should add babel-plugin-istanbul when COVERAGE=1', function() {
       process.env.NODE_ENV = 'test';
       process.env.COVERAGE = '1';
@@ -57,29 +37,6 @@ describe('babel-preset-behance', function() {
         ],
         plugins: [
           require('babel-plugin-istanbul').default,
-          require('babel-plugin-rewire'),
-        ],
-      };
-      expect(preset()).to.deep.equal(expected);
-    });
-
-    it('should add babel-plugin-rewire in the correct order', function() {
-      process.env.NODE_ENV = 'test';
-      process.env.COVERAGE = '1';
-
-      const expected = {
-        presets: [
-          [require('babel-preset-env'), {
-            exclude: [
-              'transform-regenerator',
-            ],
-            modules: false,
-          }],
-          require('babel-preset-stage-3'),
-        ],
-        plugins: [
-          require('babel-plugin-istanbul').default,
-          require('babel-plugin-rewire'),
         ],
       };
       expect(preset()).to.deep.equal(expected);
