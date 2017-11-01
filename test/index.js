@@ -7,17 +7,17 @@ describe('babel-preset-behance', function() {
 
     const expected = {
       presets: [
-        [require('babel-preset-env'), {
+        [require('@babel/preset-env'), {
           exclude: [
             'transform-regenerator',
           ],
           modules: false,
         }],
-        require('babel-preset-stage-3'),
+        require('@babel/preset-stage-3'),
       ],
       plugins: [
         [
-          require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+          require('@babel/plugin-transform-template-literals'), { loose: true },
         ],
       ],
     };
@@ -31,17 +31,17 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             exclude: [
               'transform-regenerator',
             ],
             modules: false,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
           require('babel-plugin-istanbul').default,
         ],
@@ -56,17 +56,17 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             exclude: [
               'transform-regenerator',
             ],
             modules: false,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
         ],
       };
@@ -80,17 +80,17 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             exclude: [
               'transform-regenerator',
             ],
             modules: false,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
         ],
       };
@@ -109,7 +109,7 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             targets: {
               chrome: 55,
             },
@@ -119,11 +119,11 @@ describe('babel-preset-behance', function() {
             ],
             modules: false,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
         ],
       };
@@ -143,7 +143,7 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             targets: {
               chrome: 55,
             },
@@ -153,11 +153,11 @@ describe('babel-preset-behance', function() {
             ],
             modules: undefined,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
         ],
       };
@@ -173,17 +173,17 @@ describe('babel-preset-behance', function() {
 
       const expected = {
         presets: [
-          [require('babel-preset-env'), {
+          [require('@babel/preset-env'), {
             exclude: [
               'transform-regenerator',
             ],
             modules: false,
           }],
-          require('babel-preset-stage-3'),
+          require('@babel/preset-stage-3'),
         ],
         plugins: [
           [
-            require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+            require('@babel/plugin-transform-template-literals'), { loose: true },
           ],
         ],
       };

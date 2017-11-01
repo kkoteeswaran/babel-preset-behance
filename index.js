@@ -16,12 +16,12 @@ module.exports = function(context, opts) {
 
   var config = {
     presets: [
-      [require('babel-preset-env'), envOpts],
-      require('babel-preset-stage-3'),
+      [require('@babel/preset-env'), envOpts],
+      require('@babel/preset-stage-3'),
     ],
     plugins: [
       [
-        require('babel-plugin-transform-es2015-template-literals'), { loose: true },
+        require('@babel/plugin-transform-template-literals'), { loose: true },
       ],
     ],
   };
