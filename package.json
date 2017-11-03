@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-behance",
-  "version": "16.0.2",
+  "version": "17.0.0",
   "description": "Babel preset for Behance",
   "author": "Henry Zhu <hi@henryzoo.com>",
   "license": "MIT",
